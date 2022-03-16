@@ -1,0 +1,46 @@
+:root {
+  box-sizing: border-box;
+  -ms-overflow-style: scrollbar;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  font-size: 18px;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  min-width: 320px;
+}
+
+.wrapper {
+  list-style: none;
+  display: flex;
+}
+
+.wrapper > li {
+  width: 50%;
+}
+
+.wrapper > li:first {
+  background-color: #074589;
+}
+
+.wrapper > li:last {
+  background-color: #ef675f;
+}
+
+.tile {
+  display: block;
+  height: 100%;
+  text-align: center;
+  color: #fff;
+  text-decoration: none;
+}
