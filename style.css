@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@900&display=swap");
+
 :root {
   box-sizing: border-box;
   -ms-overflow-style: scrollbar;
@@ -15,7 +17,7 @@
 body {
   margin: 0;
   font-size: 18px;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
   line-height: 1.5;
   min-width: 320px;
   height: 100%;
@@ -24,16 +26,29 @@ body {
 }
 
 header {
-  padding: 10px 20px 0;
+  padding: 50px;
+  text-align: center;
 }
 
 header > h1 {
   margin: 0;
   text-transform: uppercase;
   text-align: center;
-  font-weight: 100;
-  font-size: 60px;
-  letter-spacing: 4px;
+  font-size: 36px;
+  font-weight: 900;
+  color: #ccc;
+  display: inline-block;
+  line-height: 1;
+}
+
+header > h1 > b {
+  font-size: 50px;
+  font-weight: 900;
+}
+
+header > h1 > hr {
+  border: 2px solid #ef675f;
+  margin: 6px 0;
 }
 
 .page {
@@ -44,18 +59,17 @@ header > h1 {
   list-style: none;
   display: flex;
   margin: 0;
-  padding: 10px;
+  padding: 0;
   height: 100%;
 }
 
 .wrapper > li {
   width: 50%;
-  height: calc(100% - 20px);
+  height: 100%;
   background-image: radial-gradient(
     rgba(255, 255, 255, 0.25),
     rgba(255, 255, 255, 0)
   );
-  margin: 10px;
 }
 
 .wrapper > li:first-child {
@@ -73,15 +87,12 @@ header > h1 {
   height: 100%;
   text-align: center;
   color: #fff;
-  font-size: 8vw;
-  font-weight: 700;
+  font-size: 6vw;
+  font-weight: 900;
   line-height: 1;
   text-decoration: none;
-}
-
-.tile > span {
-  display: inline-block;
-  text-align: left;
+  text-transform: uppercase;
+  padding: 3vw;
 }
 
 .wrapper > li > .tile {
@@ -106,7 +117,7 @@ header > h1 {
   }
 
   .wrapper > li {
-    width: calc(100% - 20px);
+    width: 100%;
     height: 50%;
   }
 
