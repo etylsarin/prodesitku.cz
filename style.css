@@ -96,8 +96,8 @@ header > h1 > hr {
 }
 
 .wrapper > li > .tile {
-  background: url("./assets//praha-10.svg") no-repeat center 40%;
-  background-size: 80%;
+  background: url("./assets//praha-10.svg") no-repeat 53% 43%;
+  background-size: 225%;
   text-shadow: 0.3vw 0.3vw #074589;
 }
 
