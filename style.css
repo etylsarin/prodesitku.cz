@@ -73,11 +73,11 @@ header > h1 > hr {
 }
 
 .wrapper > li:first-child {
-  background-color: #074589;
+  background-color: #ef675f;
 }
 
 .wrapper > li:last-child {
-  background-color: #ef675f;
+  background-color: #074589;
 }
 
 .tile {
@@ -95,16 +95,16 @@ header > h1 > hr {
   padding: 3vw;
 }
 
-.wrapper > li > .tile {
-  background: url("./assets//praha-10.svg") no-repeat 53% 43%;
-  background-size: 225%;
-  text-shadow: 0.3vw 0.3vw #074589;
-}
-
-.wrapper > li:last-child > .tile {
+.wrapper > li:first-child > .tile {
   background: url("./assets//senat.svg") no-repeat center center;
   background-size: 75%;
   text-shadow: 0.3vw 0.3vw #ef675f;
+}
+
+.wrapper > li:last-child > .tile {
+  background: url("./assets//praha-10.svg") no-repeat 53% 43%;
+  background-size: 225%;
+  text-shadow: 0.3vw 0.3vw #074589;
 }
 
 @media only screen and (max-width: 767px) {
