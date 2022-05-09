@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Lato:wght@900&display=swap");
+@import url("https://use.typekit.net/ijm7lgv.css");
 
 :root {
   box-sizing: border-box;
@@ -17,7 +17,7 @@
 body {
   margin: 0;
   font-size: 18px;
-  font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "filson-pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
   line-height: 1.5;
   min-width: 320px;
   height: 100%;
@@ -25,9 +25,21 @@ body {
   flex-direction: column;
 }
 
+body::before {
+  background: url('./assets/pro-desitku-bg.jpeg');
+  filter: opacity(.25);
+  background-size: cover;
+  content: '';
+  width: 100%;
+  height: 100%;
+  position: fixed;
+}
+
 header {
-  padding: 50px;
+  padding: 80px 40px 60px;
   text-align: center;
+  position: relative;
+  z-index: 1;
 }
 
 header > h1 {
@@ -36,78 +48,79 @@ header > h1 {
   text-align: center;
   font-size: 36px;
   font-weight: 900;
-  color: #ccc;
+  color: #0a3c48;
   display: inline-block;
   line-height: 1;
-}
-
-header > h1 > b {
-  font-size: 50px;
-  font-weight: 900;
-}
-
-header > h1 > hr {
-  border: 2px solid #ef675f;
-  margin: 6px 0;
+  border-bottom: 5px solid #94c122;
 }
 
 .page {
-  flex-grow: 1;
+  position: relative;
+  z-index: 1;
+  min-height: 50vh;
+  max-height: 80vh;
 }
 
 .wrapper {
   list-style: none;
   display: flex;
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
+  width: 70%;
   height: 100%;
+  align-items: stretch;
 }
 
 .wrapper > li {
   width: 50%;
   height: 100%;
-  background-image: radial-gradient(
-    rgba(255, 255, 255, 0.25),
-    rgba(255, 255, 255, 0)
-  );
+  margin: 3px;
 }
 
 .wrapper > li:first-child {
-  background-color: #ef675f;
+  background-color: rgba(10, 60, 72, .85);
+  backdrop-filter: saturate(5);
 }
 
 .wrapper > li:last-child {
-  background-color: #074589;
+  background-color: rgba(148, 193, 34, .85);
+  backdrop-filter: saturate(5);
+}
+
+.wrapper > li:first-child:hover {
+  background-color: rgba(10, 60, 72, 1);
+}
+
+.wrapper > li:last-child:hover {
+  background-color: rgba(148, 193, 34, 1);
 }
 
 .tile {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   height: 100%;
   text-align: center;
   color: #fff;
-  font-size: 6vw;
   font-weight: 900;
   line-height: 1;
   text-decoration: none;
   text-transform: uppercase;
   padding: 3vw;
+  font-size: 3vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
-.wrapper > li:first-child > .tile {
-  background: url("./assets//senat.svg") no-repeat center center;
-  background-size: 75%;
-  text-shadow: 0.3vw 0.3vw #ef675f;
+.tile > b {
+  text-transform: none;
+  margin-bottom: 10px;
 }
 
-.wrapper > li:last-child > .tile {
-  background: url("./assets//praha-10.svg") no-repeat 53% 43%;
-  background-size: 225%;
-  text-shadow: 0.3vw 0.3vw #074589;
-}
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 1023px) {
+  .page {
+    min-height: 70vh;
+  }
+
   .wrapper {
     flex-direction: column;
   }
@@ -117,7 +130,7 @@ header > h1 > hr {
     height: 50%;
   }
 
-  .title {
-    font-size: 10vw;
+  .tile {
+    font-size: 5vw;
   }
 }
