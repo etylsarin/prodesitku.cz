@@ -26,7 +26,7 @@ body {
 }
 
 body::before {
-  background: url('./assets/pro-desitku-bg.jpeg');
+  background: url('./assets/pro-desitku-bg.webp');
   filter: opacity(.25);
   background-size: cover;
   content: '';
